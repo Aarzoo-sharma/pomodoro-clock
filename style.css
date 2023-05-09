@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;      
+    opacity: 0.9;
+}
+.container{
+    background: linear-gradient(to right,#E8AB74,#EBC68D);
+    padding: 5vh 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 20vw;
+    margin: 12vh auto;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #4A3E33;
+    border-radius: 4px;
+    height:75vh;
+    width: 120%;
+    box-shadow: 2px 4px 8px -2px;
+}
+
+.upper{
+    color: #01A1B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 45%;
+    margin: 15px;
+    font-size: 28px;
+    font-weight: 900;
+    border:10px solid #01A1B1;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+}
+#lower-1{
+    display: flex;
+    justify-content: center;
+    margin:0 auto 15px auto;
+    padding: 0 0 10px 0;
+    width: 80%;
+    border-bottom: 1px dotted white;
+    font-size: 26px;
+    color: white;
+}
+.lower-2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    margin:0 auto 15px auto;
+    padding: 0px 0 10px 0;
+    width: 80%;
+    border-bottom: 1px dotted white;
+}
+.lt,.rt{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+}
+#session-time{
+    color: #01A1B1;
+    font-size:16px ;
+}
+#break-time{
+    font-size: 16px;
+    color: #c23e0e;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.btns button{
+    width: 28px;
+    border-radius: 6px;
+    color: white;
+    background-color: #1C1814;
+}
+.lower-3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #1C1814;
+    color: white;
+    border-radius: 8px;
+}
+#pause{
+    display: none;
+}
+@media(max-width:1000px){
+    .container{
+        width: 70%;
+        margin:inherit auto;
+    }
+    .inner-container{
+        width: 40%;
+    }
+}
+@media(max-width:720px){
+    .container{
+        width: 90%;
+    }
+    .inner-container{
+        width: 70%;
+    }
+}
